@@ -1,0 +1,91 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    background: lightyellow url(assets/bg.png);
+}
+
+.btn:focus, .btn:active:focus {
+  outline: none;
+}
+
+.infobox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    z-index: 30;
+    font-weight: bold;
+}
+
+#next-level {
+    width: 300px;
+    height: 70px;
+    display: none;
+}
+#final-victory-box {
+    width: 300px;
+    height: 310px;
+    display: none;
+}
+
+#restart-level {
+    width: 200px;
+    height: 70px;
+    display: none;
+}
+
+#start-game {
+    width: 300px;
+    height: 70px;
+    top: -100px;
+}
+
+#go-fullscreen {
+    width: 300px;
+    height: 70px;
+    top: 100px;
+}
+
+#health-bar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 20px;
+    z-index: 20;
+    display: none;
+}
+
+.health-high {
+    background-color: green;
+}
+
+.health-medium {
+    background-color: orange;
+}
+
+.health-low {
+    background-color: #D90000;
+}
+
+@keyframes archway {
+    0% { background-color: rgb(50,0,0) }
+    30% { background-color: rgb(100,0,0) }
+    40% { background-color: rgb(60,0,0) }
+    50% { background-color: rgb(40,0,0) }
+    60% { background-color: rgb(60,0,0) }
+    70% { background-color: rgb(90,0,0) }
+    90% { background-color: rgb(70,0,0) }
+    100% { background-color: rgb(90,0,0) }
+}
